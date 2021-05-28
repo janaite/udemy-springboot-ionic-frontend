@@ -31,9 +31,7 @@ export class CategoriesPage {
   ionViewDidLoad() {
     this.categoryService.findAll().subscribe(response => {
       this.items = response;
-    }, error => {
-      console.log(error);
-    });
+    }, error => {});
   }
 
 }
